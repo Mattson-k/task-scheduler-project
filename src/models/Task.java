@@ -7,12 +7,14 @@ public class Task {
     private LocalDate startDate;
     private LocalDate endDate;
     private Team team;
+    private int workingHours;
 
-    public Task(String name, LocalDate startDate, LocalDate endDate, Team team) {
+    public Task(String name, LocalDate startDate, LocalDate endDate, Team team, int workingHours) {
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;
         this.team = team;
+        this.workingHours =workingHours;
     }
 
     public String getName() {
@@ -39,7 +41,15 @@ public class Task {
         this.endDate = endDate;
     }
 
-    public void setTeam(Team team) {
+    public void setWorkingHours (final int newWorkingHours) {
+        if (newWorkingHours>=0) {
+            this.workingHours=newWorkingHours;
+        }
+    }
 
+    public int getWorkingHours () {
+        return this.workingHours;
     }
 }
+
+
