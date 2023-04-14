@@ -1,9 +1,13 @@
+import models.Employee;
+import models.Task;
+import models.Team;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Scheduler {
+class Scheduler {
     private final List<Employee> employees;
     private final List<Team> teams;
 

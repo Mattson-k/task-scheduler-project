@@ -1,8 +1,10 @@
-// Employee class
+package models;
+
+// models.Employee class
 public class Employee {
-    String department;
-    String name;
-    String email;
+    private String department;
+   private  String name;
+    private String email;
     private String team;
 
     public Employee(String name, String email, String department) {

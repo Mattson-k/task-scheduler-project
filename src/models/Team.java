@@ -1,9 +1,11 @@
+package models;
+
 import java.util.ArrayList;
 
 public class Team {
 
-    private final String name;
-    private final ArrayList<Employee> members;
+    private String name;
+    private ArrayList<Employee> members;
     public Team( String name) {
         this.name = name;
         this.members = new ArrayList<Employee>();

@@ -1,10 +1,12 @@
+package models;
+
 import java.time.LocalDate;
 
 public class Task {
-    private final String name;
+    private  String name;
     private LocalDate startDate;
     private LocalDate endDate;
-    private final Team team;
+    private Team team;
 
     public Task(String name, LocalDate startDate, LocalDate endDate, Team team) {
         this.name = name;
